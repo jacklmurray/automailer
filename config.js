@@ -6,7 +6,7 @@ export const emailConfig = {
   // Recipients - can be multiple email addresses
   to: [
     'jacklillas@pm.me',
-    'sarahlillas@pm.me'
+    'sarahlillas@protonmail.com'
   ],
   
   // Email subject line
@@ -19,15 +19,15 @@ export const emailConfig = {
   
   // Email body - plain text
   body: `Hello,
-  
-  Here's our requests for next week's days and times for Milla Lillas.
-  
-  Monday - 8.30am-12.30pm
-  Tuesday - 12.30-2.30pm
-  Wednesday - 8.30am-12.30pm
-  Thursday - 12.30-2.30pm
 
-  Thanks,
-  Jack + Sarah
-  `
+Here's our requests for next week's days and times for Milla Lillas.
+
+Monday - 8.30am-12.30pm
+Tuesday - 12.30-2.30pm
+Wednesday - 8.30am-12.30pm
+Thursday - 12.30-2.30pm
+
+Thanks,
+Jack + Sarah
+`
 };
