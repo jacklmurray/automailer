@@ -1,10 +1,11 @@
 // Email configuration - Customize your email content here
 export const emailConfig = {
   // Sender email address (must be verified in Mailgun)
-  from: 'Jack Murray <jack@codacora.com>',
+  from: 'Jack Lillas <jack@codacora.com>',
   
   // Recipients - can be multiple email addresses
   to: [
+    'occasional.child.care.centre@innerwest.nsw.gov.au',
     'jacklillas@pm.me',
     'sarahlillas@protonmail.com'
   ],
@@ -20,7 +21,7 @@ export const emailConfig = {
   // Email body - plain text
   body: `Hello,
 
-Here's our requests for next week's days and times for Milla Lillas.
+Here's our request for next week's days and times for Milla Lillas.
 
 Monday - 8.30am-1.30pm
 Wednesday - 8.30am-1.30pm
