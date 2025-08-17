@@ -22,10 +22,8 @@ export const emailConfig = {
 
 Here's our requests for next week's days and times for Milla Lillas.
 
-Monday - 8.30am-12.30pm
-Tuesday - 12.30-2.30pm
-Wednesday - 8.30am-12.30pm
-Thursday - 12.30-2.30pm
+Monday - 8.30am-1.30pm
+Wednesday - 8.30am-1.30pm
 
 Thanks,
 Jack + Sarah
