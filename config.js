@@ -2,22 +2,25 @@
 export const emailConfig = {
   // Sender email address (must be verified in Mailgun)
   from: 'Jack Lillas <jack@codacora.com>',
-  
+
   // Recipients - can be multiple email addresses
   to: [
     'occasional.child.care.centre@innerwest.nsw.gov.au',
     'jacklillas@pm.me',
     'sarahlillas@protonmail.com'
   ],
-  
-  // Email subject line
-  subject: `Milla Lillas Booking for Week Starting ${new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toLocaleDateString('en-AU', {
-    timeZone: 'Australia/Sydney',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })}`,
-  
+
+  // Email subject line - now a function to calculate dynamically
+  getSubject: () => {
+    const nextWeekDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+    return `Milla Lillas Booking for Week Starting ${nextWeekDate.toLocaleDateString('en-AU', {
+      timeZone: 'Australia/Sydney',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    })}`;
+  },
+
   // Email body - plain text
   body: `Hello,
 

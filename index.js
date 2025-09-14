@@ -17,23 +17,29 @@ const mg = mailgun.client({
 
 // Function to send email
 async function sendWeeklyEmail() {
+  // Check if emails are paused
+  if (process.env.PAUSE_EMAILS === 'true') {
+    console.log('Email sending is paused. Set PAUSE_EMAILS=false to resume.');
+    return;
+  }
+
   const now = new Date();
   const sydneyTime = new Intl.DateTimeFormat('en-AU', {
     timeZone: 'Australia/Sydney',
     dateStyle: 'full',
     timeStyle: 'long'
   }).format(now);
-  
+
   console.log(`Attempting to send email at ${sydneyTime}`);
-  
+
   try {
     const messageData = {
       from: emailConfig.from,
       to: emailConfig.to,
-      subject: emailConfig.subject,
+      subject: emailConfig.getSubject(), // Now calling the function to get dynamic subject
       text: emailConfig.body
     };
-    
+
     const response = await mg.messages.create(process.env.MAILGUN_DOMAIN, messageData);
     console.log('Email sent successfully:', response);
   } catch (error) {
