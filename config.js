@@ -27,6 +27,7 @@ export const emailConfig = {
 Here's our request for next week's days and times for Milla Lillas.
 
 Monday - 8.30am-1.30pm
+Tuesday - 8.30am-3.30pm
 Wednesday - 8.30am-1.30pm
 
 Thanks,
