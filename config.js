@@ -28,6 +28,7 @@ Here's our request for next week's days and times for Milla Lillas.
 
 Monday - 8.30am-1.30pm
 Wednesday - 8.30am-1.30pm
+Thursday - 8.30am-3.30pm
 
 Thanks,
 Jack + Sarah
